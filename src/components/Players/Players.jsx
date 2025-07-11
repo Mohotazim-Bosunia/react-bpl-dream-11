@@ -14,7 +14,7 @@ const Players = () => {
 
     return (
       <div>
-        <h1>Player:{players.length}</h1>
+        
         <div className="grid grid-cols-3 gap-4">
            {
           players.map(player => <Player
