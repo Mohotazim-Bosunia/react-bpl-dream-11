@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": "P001",
+    "name": "Shakib All-Hassan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/gZBRgCw6/7992d7c9ecf9aaf1e8c353c34b92c41e.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm medium",
+    "biddingPrice": "$17 Cr"
+  },
+  {
+    "playerId": "P002",
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co/HpM4mTyy/08vk.gif",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$14 Cr"
+  },
+  {
+    "playerId": "P003",
+    "name": "Masrafi Bin-Mortuza",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/4wvX1SYF/mortaza-has-hinted-at-retirement-from-all-forms-of-the-game-at-the-end-of-this-season.webp",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$ 7Cr"
+  },
+  {
+    "playerId": "P004",
+    "name": "Cris Gayel",
+    "country": "West-Indies",
+    "image": "https://i.ibb.co/0ykcDvsz/AP11-06-2021-000142-B-0-1636207082371-1719382003207.webp",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$12 Cr"
+  },
+  {
+    "playerId": "P005", 
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/sJgDTWMm/tamimiqbal-cropped-1d5fd43rf14s31qjfegrfd6pt2.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$10 Cr"
+  },
+  {
+    "playerId": "P006",
+    "name": "Kane Williumson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co/9HWh7jrq/Kane-Williamson-Silent-Contender-in-World-Cup-1024x672.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$13 Cr"
+  },
+  {
+    "playerId": "P007",
+    "name": "Mushfikur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/JF5qW9yq/2021-07-23-T064306-Z-1-LYNXMPEH6-M09-C-RTROPTP-3-CRICKET-WORLDCUP-WIN-BGD-1630903251878-166227441707.jpg",
+    "role": "Wiket-keeper",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$ 7 Cr"
+  },
+  {
+    "playerId": "P008",
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/wNVdGdx4/Mahmudullah-roars.webp",
+    "role": "All-Rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": "$7 Cr"
+  },
+  {
+    "playerId": "P009",
+    "name": "Rashid Khan",
+    "country": "Afganishan",
+    "image": "https://i.ibb.co/bjcL2qb6/ANI-20240826162534.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm legbreak",
+    "biddingPrice": "$11 Cr"
+  },
+  {
+    "playerId": "P010",
+    "name": "Malingga",
+    "country": "Sri Lanka",
+    "image": "https://i.ibb.co/VpSQ5Dqk/urhoqci8-lasith-malinga-instagram-625x300-15-September-21.webp",
+    "role": "Boller",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Fast-Boller",
+    "biddingPrice": "$9 Cr"
+  },
+  {
+    "playerId": "P011",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co/WwdJ9mQ/file-photo-mustafizur-rahman-registered-career-best-figures-of-6-10-to-star-in-bangladeshs-commandin.webp",
+    "role": "Boller",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Fast-Boller",
+    "biddingPrice": "$12 Cr"
+  },
+  {
+    "playerId": "P012",
+    "name": "Taskin Ahamed",
+    "country": "Bangladesh",
+    "image": "https://example.com/images/ahmed_zaki.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Fast-Boller",
+    "biddingPrice": "$9 Cr"
+  },
+  {
+    "playerId": "P013",
+    "name": "Butler",
+    "country": "England",
+    "image": "https://i.ibb.co/ksF8L6N7/Jos-Butler-updated.jpg",
+    "role": "Wiket-keeper",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": "$8 Cr"
+  },
+  {
+    "playerId": "P014",
+    "name": "Maxwell",
+    "country": "Australia",
+    "image": "https://example.com/images/naveen_malik.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm legbreak",
+    "biddingPrice": "$9 Cr"
+  },
+  {
+    "playerId": "P015",
+    "name": "Shahid Afridi",
+    "country": "Pakisthan",
+    "image": "https://i.ibb.co/35g4pxCF/skysports-shahid-afridi-pakistan-3894063.jpg",
+    "role": "All-Rounder",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm legspin",
+    "biddingPrice": "$8 Cr"
+  }
+]
