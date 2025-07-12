@@ -1,7 +1,25 @@
+import { useState } from 'react';
 import logo from '../../assets/imgage/logo.png'
-
+import { BsCoin } from "react-icons/bs";
+import Header from '../Header/Header';
 const Navbar = () => {
+
+  const[coin,setCoin]=useState(0)
+
+  const handleButtenCoin = () =>{
+    
+    const newCoin = coin+30;
+    setCoin(newCoin)
+  }
+  
+  //console.log(coin)
+
+  
     return (
+
+      <div>
+       
+
       <div class="flex items-center justify-between px-6 py-4 bg-white shadow">
   
   <div class="flex items-center space-x-2">
@@ -18,13 +36,17 @@ const Navbar = () => {
   </div>
 
   
-  <div>
-    <button class="flex items-center gap-1 px-4 py-2 bg-white border rounded-full text-sm font-semibold shadow-sm">
-      <span class="text-black">0 Coin</span>
-      <img src="coin-icon.png" alt="Coin" class="h-4 w-4" />
-    </button>
+  <div className=''>
+    <h1 className='flex justify-between text-1xl font-semibold border border- rounded-lg p-3 gap-3'>Coin:{coin}<BsCoin className='mt-1 bg-yellow-400 rounded-full'></BsCoin></h1>
   </div>
+
+
+  
 </div>
+
+<Header handleButtenCoin = {handleButtenCoin}></Header>
+      </div>
+
 
     );
 };
