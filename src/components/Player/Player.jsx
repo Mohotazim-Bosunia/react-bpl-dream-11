@@ -1,11 +1,15 @@
+import { FcBusinessman } from "react-icons/fc";
 
-const Player = ({player}) => {
+
+const Player = ({player,hundleAddPlayer}) => {
     //console.log(player)
     const {image,name,country,role,battingType,bowlingType,biddingPrice}=player;
     return (
-        <div className='border p-5 rounded-xl'>
+       <div>
+            
+         <div className='border p-5 rounded-xl'>
             <img className="rounded-xl" src={image} alt="" />
-             <h1 className="text-2xl font-bold">{name}</h1>
+             <h1 className="flex m-2 text-2xl font-bold"><FcBusinessman></FcBusinessman>{name}</h1>
              <div className="flex justify-between">
                 <h1 className="mt-3">{country}</h1>
                 <h1 className="hover:bg-green-400 border rounded-xl p-2 bg-slate-400">{role}</h1>
@@ -22,10 +26,11 @@ const Player = ({player}) => {
                 </div>
                 <div className="flex justify-between">
                     <h1 className="font-semibold">Price:{biddingPrice}</h1>
-                    <button className="hover:bg-sky-500  border border-gray-950 rounded-md p-2">Choose Player</button>
+                    <button onClick={() => hundleAddPlayer(player)} className="hover:bg-sky-500  border border-gray-950 rounded-md p-2">Choose Player</button>
                 </div>
             </div>
         </div>
+       </div>
     
     );
 };
