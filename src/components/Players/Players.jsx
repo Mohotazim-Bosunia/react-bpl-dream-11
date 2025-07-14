@@ -1,6 +1,7 @@
 import Player from "../Player/Player";
 import { useEffect, useState } from "react";
 import { MdDeleteSweep } from "react-icons/md";
+import { handleAvailable, handleSelectBtn } from "../Utilities/Display";
 
 const Players = () => {
   const [players,setPlayers]=useState([])
@@ -39,10 +40,10 @@ const Players = () => {
           
           <div>
             <h1 className="m-4 text-2xl font-bold">Available Players</h1>
-            <div>
+            <div id="select-container" className="hidden">
               {
                 addplayer.map(item => 
-               <div className="border rounded-xl flex justify-between gap-x-96">
+               <div className="border rounded-xl flex justify-between gap-x-96 mb-5 ml-10">
                    <div className="flex gap-4">
                     <div>
                       <img className="w-20 h-20 rounded-full" src={item.image} alt="" />
@@ -61,11 +62,11 @@ const Players = () => {
         
           </div>
           <div className="mr-7">
-              <button  className="border rounded-md p-3 hover:bg-sky-300">Available</button>
-              <button  className="border rounded-md p-3 hover:bg-sky-300" >Selected:{addplayer.length}</button>
+              <button onClick={handleAvailable} className="border rounded-md p-3 hover:bg-sky-300">Available</button>
+              <button onClick={handleSelectBtn}  className="border rounded-md p-3 hover:bg-sky-300" >Selected:{addplayer.length}</button>
           </div>
         </div>
-        <div id="hide-container" className="grid grid-cols-3 gap-4">
+        <div id="available-container" className="grid grid-cols-3 gap-4">
            {
           players.map(player => <Player
             key={player.playerId}

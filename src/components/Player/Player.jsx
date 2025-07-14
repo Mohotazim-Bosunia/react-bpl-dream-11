@@ -5,7 +5,7 @@ const Player = ({player,handlePlayers}) => {
     //console.log(player)
     const {image,name,country,role,battingType,bowlingType,biddingPrice}=player;
     return (
-       <div>
+       <div >
             
          <div className='border p-5 rounded-xl'>
             <img className="rounded-xl" src={image} alt="" />
