@@ -1,7 +1,7 @@
 import Player from "../Player/Player";
 import { useEffect, useState } from "react";
 import { MdDeleteSweep } from "react-icons/md";
-import { handleAvailable, handleSelectBtn } from "../Utilities/Display";
+import { handleAvailable, handleMoreAddbtn, handleSelectBtn } from "../Utilities/Display";
 
 const Players = () => {
   const [players,setPlayers]=useState([])
@@ -39,7 +39,8 @@ const Players = () => {
         <div className="flex justify-between">
           
           <div>
-            <h1 className="m-4 text-2xl font-bold">Available Players</h1>
+            <h1 id="remove-available" className="m-4 text-2xl font-bold">Available Players</h1>
+            <h1 id="add-selectplayer" className="hidden m-4 text-2xl font-bold">Your Selected Players</h1>
             <div id="select-container" className="hidden">
               {
                 addplayer.map(item => 
@@ -59,7 +60,11 @@ const Players = () => {
                 )
               }
             </div>
-        
+
+
+             <button id="moreAddBtn-container" onClick={handleMoreAddbtn} className="hidden border p-3 bg-green-500 rounded-lg ml-10 hover:bg-sky-400">Add More Players</button>
+
+
           </div>
           <div className="mr-7">
               <button onClick={handleAvailable} className="border rounded-md p-3 hover:bg-sky-300">Available</button>
