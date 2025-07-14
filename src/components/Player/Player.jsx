@@ -1,7 +1,7 @@
 import { FcBusinessman } from "react-icons/fc";
 
 
-const Player = ({player,hundleAddPlayer}) => {
+const Player = ({player,handlePlayers}) => {
     //console.log(player)
     const {image,name,country,role,battingType,bowlingType,biddingPrice}=player;
     return (
@@ -26,7 +26,7 @@ const Player = ({player,hundleAddPlayer}) => {
                 </div>
                 <div className="flex justify-between">
                     <h1 className="font-semibold">Price:{biddingPrice}</h1>
-                    <button onClick={() => hundleAddPlayer(player)} className="hover:bg-sky-500  border border-gray-950 rounded-md p-2">Choose Player</button>
+                    <button onClick={() => handlePlayers(player)}  className="hover:bg-sky-500  border border-gray-950 rounded-md p-2">Choose Player</button>
                 </div>
             </div>
         </div>

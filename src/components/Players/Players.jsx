@@ -1,7 +1,6 @@
 import Player from "../Player/Player";
 import { useEffect, useState } from "react";
 
-
 const Players = () => {
   const [players,setPlayers]=useState([])
   const [addplayer,setAddplayer]=useState([])
@@ -15,27 +14,56 @@ const Players = () => {
  
   //console.log(players)
 
-  const hundleAddPlayer = (player) => {
-    const newAddplayer=[...addplayer,player]
-     setAddplayer(newAddplayer)
-     console.log(addplayer)
+  const handlePlayers = player =>{
+    
+    const isExised = addplayer.find(items => items.playerId === player.playerId)
+    if(!isExised){
+      setAddplayer([...addplayer,player])
+    }
+    else{
+      alert('Already Exist')
+    }
+
+    
+    //console.log(addplayer)
   }
    
     return (
       <div>
         
         <div className="flex justify-between">
-          <h1 className="m-4 text-2xl font-bold">Available Players</h1>
+          
+          <div>
+            <h1 className="m-4 text-2xl font-bold">Available Players</h1>
+            <div>
+              {
+                addplayer.map(item => 
+                  <div className="">
+                    <div>
+
+                    </div>
+                    <div>
+                      <h1 className="font-bold text-2xl">{item.name}</h1>
+                      <p>{item.role}</p>
+                    </div>
+                    
+                  </div>
+                )
+              }
+            </div>
+        
+          </div>
           <div className="mr-7">
-               <b className="border rounded-md p-3 hover:bg-sky-300">Available:</b>
-               <b className="border rounded-md p-3 hover:bg-sky-300">Selected:{addplayer.length} </b>
+              <button  className="border rounded-md p-3 hover:bg-sky-300">Available</button>
+              <button  className="border rounded-md p-3 hover:bg-sky-300" >Selected:{addplayer.length}</button>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div id="hide-container" className="grid grid-cols-3 gap-4">
            {
           players.map(player => <Player
-          player={player}
-          hundleAddPlayer={hundleAddPlayer}
+            key={player.playerId}
+            player={player}
+            handlePlayers={handlePlayers}
           ></Player>)
          }
         </div>
