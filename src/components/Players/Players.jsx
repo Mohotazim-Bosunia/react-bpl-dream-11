@@ -1,5 +1,6 @@
 import Player from "../Player/Player";
 import { useEffect, useState } from "react";
+import { MdDeleteSweep } from "react-icons/md";
 
 const Players = () => {
   const [players,setPlayers]=useState([])
@@ -23,10 +24,13 @@ const Players = () => {
     else{
       alert('Already Exist')
     }
-
-    
+   
     //console.log(addplayer)
   }
+   const handleDelete= id =>{
+      const newAddPlayer =addplayer.filter(y => y.playerId !=id)
+      setAddplayer(newAddPlayer)
+    }
    
     return (
       <div>
@@ -38,16 +42,19 @@ const Players = () => {
             <div>
               {
                 addplayer.map(item => 
-                  <div className="">
+               <div className="border rounded-xl flex justify-between gap-x-96">
+                   <div className="flex gap-4">
                     <div>
-
+                      <img className="w-20 h-20 rounded-full" src={item.image} alt="" />
                     </div>
-                    <div>
+                    <div className="mt-3">
                       <h1 className="font-bold text-2xl">{item.name}</h1>
                       <p>{item.role}</p>
                     </div>
                     
                   </div>
+                  <button onClick={() =>handleDelete(item.playerId)} className="text-green-500 text-4xl"><MdDeleteSweep></MdDeleteSweep></button>
+               </div>
                 )
               }
             </div>
